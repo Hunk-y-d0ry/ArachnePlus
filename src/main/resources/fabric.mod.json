@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "arachneplus",
+  "version": "${version}",
+  "name": "Arachne Plus",
+  "description": "For Arachne Lovers, By Arachne Lovers. HUD, profit tracker and achievements for the Arachne miniboss on Hypixel Skyblock.",
+  "authors": ["Hunkydory_"],
+  "license": "All Rights Reserved",
+  "icon": "assets/arachneplus/icon.png",
+  "environment": "client",
+  "mixins": ["arachneplus.mixins.json"],
+  "entrypoints": {
+    "client": ["com.arachneplus.ArachnePlusClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,55 @@
+ARACHNE PLUS - HOW TO INSTALL
+=============================
+
+What this is: a Fabric mod for Minecraft 26.2 that adds Arachne tools for
+Hypixel Skyblock (phase display, brood counter, placer alert, timers, party
+commands and more). You build it from this folder, then put the finished
+file in your mods folder.
+
+WHAT YOU NEED
+-------------
+1. Minecraft 26.2 with the Fabric loader (0.19.5 or newer).
+2. Java 25 (JDK). The build script offers to install it for you on Windows.
+3. An internet connection (the first build downloads a lot).
+
+WINDOWS (easiest)
+-----------------
+1. Right-click the zip, choose "Extract All...", then open the new folder.
+2. Double-click  build-windows.bat
+   - If Windows says "Windows protected your PC", click "More info", then "Run anyway".
+   - If it says Java 25 is missing, press Y to install it. When that finishes,
+     close the window and double-click build-windows.bat again.
+3. Wait. The first build can take several minutes.
+4. When it says ALL DONE, the mod and Fabric API have been copied to:
+      %APPDATA%\.minecraft\mods
+   Any older Arachne Plus there is replaced automatically.
+
+Using Prism Launcher (or another launcher)?
+The script installs into the normal .minecraft folder. After the build, copy
+  build\libs\arachneplus-<version>.jar
+into your instance's mods folder yourself (in Prism: right-click the instance,
+Folder, then open "minecraft" and "mods"). Delete any older Arachne Plus jar
+there first. You also need Fabric API for 26.2 in the same folder:
+  https://modrinth.com/mod/fabric-api
+
+MAC / LINUX
+-----------
+Open a terminal in this folder and run:   ./build-mac-linux.sh
+Then put Fabric API for 26.2 in your mods folder (the script prints the link).
+
+FIRST TIME IN GAME
+------------------
+- Start Minecraft with your Fabric 26.2 profile.
+- Press Right Shift to open the Arachne Plus settings screen.
+- Some features (looking up other players) need a Hypixel API key.
+  Get one at https://developer.hypixel.net, then type in game:
+      /apapikey YOUR_KEY_HERE
+  (or use the "API key" button in the settings screen).
+  Keys from the developer site expire, so renew it when it stops working.
+
+IF THE BUILD FAILS
+------------------
+Make sure Java 25 is installed, then run the build again. If it still fails,
+copy the red error text and send it to the mod author.
+
+Made by Hunkydory_
